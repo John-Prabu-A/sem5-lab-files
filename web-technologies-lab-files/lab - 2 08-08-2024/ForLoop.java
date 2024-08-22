@@ -4,7 +4,7 @@ class ForLoop {
 	public static void main(String args[]) {
 		// Finding Factorial
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter a number between (1 - 10): ");
+		System.out.print("Enter a number between (0 - 10): ");
 		int num = sc.nextInt();
 
 		if(num >= 0 && num <= 10) {

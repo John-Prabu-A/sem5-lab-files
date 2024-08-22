@@ -5,7 +5,7 @@ class UncontrolStmt {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a num to end loop : ");
 		int end = sc.nextInt();
-		System.out.print("Enter a num to skip it\'s multiples : ");
+		System.out.print("Enter a num to skip it's multiples : ");
 		int skip_factor = sc.nextInt();
 
 		int i = 0; 
