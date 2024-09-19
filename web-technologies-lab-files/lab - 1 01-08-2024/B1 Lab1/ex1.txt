@@ -9,6 +9,6 @@ Basic java programs:
 Implement methods to calculate total marks, percentage, and grade.
 8.Create a BankAccount class with attributes like account number, balance, and account type.
 Implement methods for deposit, withdrawal, and checking balance.
-9.Create classes for different shapes like Circle, Rectangle, and Triangle. Each class should have necessary attributes and methods to calculate area and perimeter.
+9.Create classes for different shapes like Circle, Rectangle, and Triangle.Each class should have necessary attributes and methods to calculate area and perimeter.
 Create objects of different shapes and perform calculations.
 10.Create a Calculator class with methods for basic arithmetic operations.
