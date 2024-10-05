@@ -47,7 +47,7 @@ public class ToDoApp extends JFrame {
             String task = taskInput.getText().trim();
             if (!task.isEmpty()) {
                 listModel.addElement(task);
-                taskInput.setText(""); // Clear input field
+                taskInput.setText(""); 
             } else {
                 JOptionPane.showMessageDialog(ToDoApp.this, "Please enter a task.", "Warning", JOptionPane.WARNING_MESSAGE);
             }
