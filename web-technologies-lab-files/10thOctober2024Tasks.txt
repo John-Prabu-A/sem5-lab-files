@@ -1,0 +1,38 @@
+1. Swing
+2. SQLite
+3. File Streams
+4. Thread
+5. JApplet
+
+
+java.applet
+
+init
+start
+service
+paint 
+stop
+
+awt
+
+JApplet
+____________
+Thread Mgmt:
+------------
+new(creating obj) 
+-> runnable ( obj.start();) 
+-> running (run method called internally by jvm after start call) 
+-> blocked(wait - IO/sleep(temporarily block current thread specific period of time) /priority/suspend/yield) 
+-> exit (Job finished/ abropted due to unhandled exception)
+
+
+sync - while T1 running T2, T3 should wait
+async - T1, T2, T3 can run same time (blocked thread, join operation, thread switching)
+
+priority of thread (min: 0, default: 5, max: 10)
+
+
+Thread Creation:
+----------------
+runnable (interface) need thread class to extend
+super abstract static Thread (Class)

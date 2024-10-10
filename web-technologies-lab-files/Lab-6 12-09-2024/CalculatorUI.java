@@ -13,8 +13,8 @@ public class CalculatorUI {
         displayPanel.setLayout(new BorderLayout());
 
         // Display labels for the result and expression
-        JLabel expressionLabel = new JLabel("75 × 4 × 4", SwingConstants.RIGHT);
-        JLabel resultLabel = new JLabel("1200", SwingConstants.RIGHT);
+        JLabel expressionLabel = new JLabel("", SwingConstants.RIGHT);
+        JLabel resultLabel = new JLabel("", SwingConstants.RIGHT);
 
         expressionLabel.setFont(new Font("Arial", Font.PLAIN, 18));
         resultLabel.setFont(new Font("Arial", Font.BOLD, 36));
