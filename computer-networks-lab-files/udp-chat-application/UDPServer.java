@@ -1,6 +1,5 @@
-import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
+import java.io.*;
+import java.net.*;
 
 public class UDPServer {
 
@@ -13,6 +12,8 @@ public class UDPServer {
         DatagramPacket receivePacket = new DatagramPacket(receiveBuf, receiveBuf.length);
         DatagramPacket sendPacket = new DatagramPacket(sendBuf, sendBuf.length);
 
+        BufferedReader din = new BufferedReader(new InputStreamReader(System.in));
+
         System.out.println("[INFO] : Server Started");
         while(true) {
             server.receive(receivePacket);
@@ -22,7 +23,14 @@ public class UDPServer {
                 break;
             }
             System.out.println("[CLIENT] : " + msg);
-            String data;
+            String data = new String(din.readLine());
+            sendBuf = data.getBytes();
+            server.send(sendPacket);
+            if(data.equalsIgnoreCase("terminate")) {
+                System.out.println("[INFO] : Client connection terminated");
+                break;
+            }
+            System.out.println("[SERVER] : " + data);
             
         }
         server.close();
